@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.front{
+    background-image: url(téléchargement.gif);
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+}
+.second{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.third{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: rgb(255, 230, 202);
+    background-color: rgb(12, 7, 94);
+    font-size: 35px;
+    text-decoration:overline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    position: absolute;
+    background-size: auto;
+    left: 0;
+    margin-left: 5px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(750px - 0px);
+  }
+  100% {
+    left: 0;
+  }
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgba(169, 96, 237, 0.97);
+    font-family: cursive;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+}
+ul li a:hover{
+    color: rgb(250, 45, 189);
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 35px;
+    background:#1c1b4d;
+    border: 2px solid rgba(248, 233, 200, 0.97);
+    margin-top: 13px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    float:left;
+    padding: 10% , 0;
+    border-radius: 9px;
+}
+.srch::placeholder{
+color: antiquewhite;
+}
+.btn{
+    width: 100px;
+    height: 25px;
+    background: rgba(144, 61, 222, 0.97);
+    border: 2px solid bisque;
+    margin-top: 19px;
+    color:azure;
+    font-size: 15px;
+    float:left;
+    margin-left: 13px;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(255, 0, 251);
+}
+.content{
+    width: 250px;
+    height: 380px;
+    background-color:rgb(252, 241, 229);
+    opacity: 0.8;
+    position:absolute;
+    border-radius: 10px;
+    padding: 25px;
+}
+.content .par{
+    padding-left: 20px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+ .content .cn{
+    width: 160px;
+    height: 40px;
+    background: rgba(169, 96, 237, 0.97);
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color:rgb(255, 230, 202);
+    transition: 0.1s ease;
+}
+.cn:hover{
+    background-color: rgb(255, 0, 195);
+}
+.content span{
+    color:  rgb(246, 9, 155);
+}
+.form h2{
+position: center;
+}
+.form input{
+    background: transparent;
+    border-radius: 8px;
+    color: rgba(169, 96, 237, 0.97);
+    font-family: sans-serif;
+    margin: 2px;
+}
+::placeholder{
+    color: rgb(255, 0, 157);
+    font-family: Arial;
+}
+ .btnn{
+    background: rgba(169, 96, 237, 0.97);
+    border-radius: 5px;
+    color: rgb(6, 6, 6);
+    transition: 0.1s ease;
+} 
+.btnn:hover{
+    background: rgb(255, 4, 209);
+}
+.btnn a{
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+}
+.form .link a{
+    color: #ff00bf;
+}
+footer {
+    background-color: rgb(5, 2, 62) ;
+    padding: 0px;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  footer .copyright {
+    font-size: 12px;
+    font: rgb(255, 230, 202);
+    text-align: left;
+  }
+  .menu ul {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu ul {
+      column-count: 1;
+    }
+  }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSCRIPTION</title>
+    <style>
+.inscription{
+
+            /* background: linear-gradient(rgb(79, 79, 79),rgb(1, 35, 9)); */
+  background-image: url(Wallpaper\ _\ Wrinkled\ paper\ background\,\ Paper\ background\ texture\,\ Texture\ graphic\ design.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  background-position: center;
+  background-size:cover;
+  height: 100vh;
+        }
+ form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#play{
+   float: left;
+
+}
+#registration-success  {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #939493;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #141414;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+    </style>
+</head>
+<body class="inscription">
+    <form id="registration-form">
+        <h2><I> Devenez un membre du MARUSIC</I></h2>
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="favorite-music-genre">Votre genre de musique préféré:</label>
+        <select id="favorite-music-genre" name="favorite-music-genre" required>
+          <option value="">--Choisissez votre genre de musique préféré--</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="jazz">Jazz</option>
+          <option value="classique">Classique</option>
+          <option value="rap">Rap</option>
+        </select>
+
+        
+        <label for="play"><h3>vous pouvez jouer une instrument musical ??</h3></label>
+        <div id="play">
+        <input type="radio" id="oui" name="compte" value="oui"><i> oui</i><br>
+        <input type="radio" id="non" name="compte" value="non"><i> non </i><br>
+        </div><br><br>
+
+        
+
+        <div id="registration-success">Inscription réussie! Bienvenue dans MARUSIC</div><br>
+        <div class="checkboxes">
+            <label for="terms">
+              <input type="checkbox" id="terms" name="terms" required> J'accepte les termes et conditions.
+            </label>
+          </div><br>
+        
+        <button type="submit" id="submit-btn">S'inscrire</button>
+      </form>
+      <script>
+        const registrationForm = document.getElementById('registration-form');
+const registrationSuccess = document.getElementById('registration-success');
+
+registrationForm.addEventListener("submit");
+ (e) => {
+  e.preventDefault();
+  
+  // Vérifiez si tous les champs ont été remplis
+  const name = registrationForm.elements['name'].value.trim();
+  const email = registrationForm.elements['email'].value.trim();
+  const password = registrationForm.elements['password'].value}
+
+      </script>       
+</body>
+</html>
